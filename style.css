@@ -3,8 +3,16 @@
     src: url("./fonts/Mukta-Regular.ttf")
 }
 
-body{font-family: Murkat;}
-.header{text-align: center;}
+body{font-family: Murkat;background: #040F0F;}
+.header{text-align: center;font-size: 20px;color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;}
+
+.header h1{padding-left: 30px;}
 
 .bodyTable{
     text-align: center;
@@ -24,6 +32,7 @@ body{font-family: Murkat;}
 .bodyTable .elements div:hover{transition: 0.5s;transform: scale(0.9,0.9);}
 
 .elements{
+    color:white;
 border-radius: 20px;
 padding:50px;
 width: fit-content;
@@ -31,7 +40,7 @@ margin: 0 auto;
 display: grid;
 grid-template-columns: repeat(18,60px);
 grid-template-rows: repeat(7,minmax(0.5fr,1fr));
-background-color: rgb(247, 195, 126);
+background-color: #85BDBF;
 box-shadow: 5px 4px 34px -1px rgba(0,0,0,0.24);}
 
 #H{background-color: #F58021;grid-area: 1/1;}
@@ -130,7 +139,7 @@ box-shadow: 5px 4px 34px -1px rgba(0,0,0,0.24);}
 #Ts{background-color: #A2B427;grid-area: 7/17 ;}
 #Og{background-color: #006A36;grid-area: 7/18 ;}
 
-.legendElements li{list-style-type: none;padding: 10px;}
+
 
 /*
 Noble gas -> #006A36    | Post transition metal -> #0088CE
@@ -140,17 +149,17 @@ Metalloids -> #ED1944
 Other metals -> #781E77 
 */
 
-#noble-gas{grid-area: 1/8; font-size: 10px;}
-#halogens {grid-area: 1/9; font-size: 10px;}
-#nonmetal {grid-area: 1/10; font-size: 10px;}
-#metalloid {grid-area: 1/11; font-size: 10px;}
-#other-metals {grid-area: 2/8; font-size: 10px;}
-#post-transition-metal {grid-area: 2/9; font-size: 10px;}
-#alkaline-earth-metal {grid-area: 2/10; font-size: 10px;}
-#alkali-metal {grid-area: 2/11; font-size: 10px;}
+#noble-gas{grid-area: 1/8; font-size: 10px;color:black}
+#halogens {grid-area: 1/9; font-size: 10px;color:black}
+#nonmetal {grid-area: 1/10; font-size: 10px;color:black}
+#metalloid {grid-area: 1/11; font-size: 10px;color:black}
+#other-metals {grid-area: 2/8; font-size: 10px;color:black}
+#post-transition-metal {grid-area: 2/9; font-size: 10px;color:black}
+#alkaline-earth-metal {grid-area: 2/10; font-size: 10px;color:black}
+#alkali-metal {grid-area: 2/11; font-size: 10px;color:black}
 
-#stateMatter{grid-area: 1/13;font-size: 10px;}
-#stateElement{grid-area: 1/14;}
+#stateMatter{grid-area: 1/13;font-size: 10px;color:black}
+#stateElement{grid-area: 1/14;width: 40px;}
 
 #noble-gas section{background-color: #006A36; width: 50px;height: 10px;}
 #halogens section{background-color: #A2B427; width: 50px;height: 10px;}
@@ -177,7 +186,7 @@ Other metals -> #781E77
     justify-content: space-around;}
     
 .summaryElements{
-    background-color: rgb(255, 215, 162);;
+    background-color: #C2FCF7;;
     margin:0 auto;
     border-radius: 20px;
     padding: 20px;
