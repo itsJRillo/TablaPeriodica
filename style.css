@@ -140,26 +140,26 @@ Metalloids -> #ED1944
 Other metals -> #781E77 
 */
 
-#noble-gas{grid-area: 1/8; font-size: 8px;}
-#halogens {grid-area: 1/9; font-size: 8px;}
-#nonmetal {grid-area: 1/10; font-size: 8px;}
-#metalloid {grid-area: 1/11; font-size: 8px;}
-#other-metals {grid-area: 2/8; font-size: 8px;}
-#post-transition-metal {grid-area: 2/9; font-size: 8px;}
-#alkaline-earth-metal {grid-area: 2/10; font-size: 8px;}
-#alkali-metal {grid-area: 2/11; font-size: 8px;}
+#noble-gas{grid-area: 1/8; font-size: 10px;}
+#halogens {grid-area: 1/9; font-size: 10px;}
+#nonmetal {grid-area: 1/10; font-size: 10px;}
+#metalloid {grid-area: 1/11; font-size: 10px;}
+#other-metals {grid-area: 2/8; font-size: 10px;}
+#post-transition-metal {grid-area: 2/9; font-size: 10px;}
+#alkaline-earth-metal {grid-area: 2/10; font-size: 10px;}
+#alkali-metal {grid-area: 2/11; font-size: 10px;}
 
-#stateMatter{grid-area: 1/13;font-size: 8px;}
+#stateMatter{grid-area: 1/13;font-size: 10px;}
 #stateElement{grid-area: 1/14;}
 
-#noble-gas section{background-color: #006A36; width: 30px;height: 10px;}
-#halogens section{background-color: #A2B427; width: 30px;height: 10px;}
-#nonmetal section{background-color: #F58021; width: 30px;height: 10px;}
-#metalloid section{background-color: #ED1944; width: 30px;height: 10px;}
-#other-metals section{background-color: #781E77; width: 30px;height: 10px;}
-#post-transition-metal section{background-color: #0088CE; width: 30px;height: 10px;}
-#alkaline-earth-metal section{background-color: #FDBA12; width: 30px;height: 10px;}
-#alkali-metal section{background-color: #002A4E; width: 30px;height: 10px;}
+#noble-gas section{background-color: #006A36; width: 50px;height: 10px;}
+#halogens section{background-color: #A2B427; width: 50px;height: 10px;}
+#nonmetal section{background-color: #F58021; width: 50px;height: 10px;}
+#metalloid section{background-color: #ED1944; width: 50px;height: 10px;}
+#other-metals section{background-color: #781E77; width: 50px;height: 10px;}
+#post-transition-metal section{background-color: #0088CE; width: 50px;height: 10px;}
+#alkaline-earth-metal section{background-color: #FDBA12; width: 50px;height: 10px;}
+#alkali-metal section{background-color: #002A4E; width: 50px;height: 10px;}
 
 #elementoSelecc h1{margin: 0 auto;}
 #elementoSelecc{
@@ -188,7 +188,8 @@ Other metals -> #781E77
     margin-bottom: 5%;
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    flex-direction: column;}
 
 
 .changeLang a{
