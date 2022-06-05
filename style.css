@@ -10,23 +10,29 @@ body{font-family: Murkat;}
     text-align: center;
     display: block;
     border-radius: 20px;}
+    
 .bodyTable .elements div{
-    width: 30px;
-    height: 30px;
+
+    width: 50px;
+    height: 50px;
     text-align: center;
-    font-size: 6px;
+    font-size: 9px;
     padding: 5px;
     transition: 0.25s;
     cursor: default;}
 
+.bodyTable .elements div:hover{transition: 0.5s;transform: scale(0.9,0.9);}
 
 .elements{
-    display: grid;
-    grid-template-columns: repeat(18,50px);
-    grid-template-rows: repeat(7,50px);
-}
-
-.bodyTable .elements div:hover{transition: 0.5s;transform: scale(0.9,0.9);}
+border-radius: 20px;
+padding:50px;
+width: fit-content;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(18,60px);
+grid-template-rows: repeat(7,minmax(0.5fr,1fr));
+background-color: rgb(247, 195, 126);
+box-shadow: 5px 4px 34px -1px rgba(0,0,0,0.24);}
 
 #H{background-color: #F58021;grid-area: 1/1;}
 #He{background-color: #006A36;grid-area: 1/18;}
@@ -86,7 +92,6 @@ body{font-family: Murkat;}
 #I{background-color: #A2B427;grid-area: 5/17 ;}
 #Xe{background-color: #006A36;grid-area: 5/18 ;}
 
-
 #Cs{background-color: #002A4E;grid-area: 6/1;}
 #Ba{background-color: #FDBA12;grid-area: 6/2 ;}
 #Lu{background-color: #0088CE;grid-area: 6/3 ;}  
@@ -106,25 +111,24 @@ body{font-family: Murkat;}
 #At{background-color: #A2B427;grid-area: 6/17 ;}
 #Rn{background-color: #006A36;grid-area: 6/18 ;}
 
-
-#Fr{background-color: #002A4E;grid-area: 6/1;}
-#Ra{background-color: #FDBA12;grid-area: 6/2 ;}
-#Lr{background-color: #0088CE;grid-area: 6/3 ;}  
-#Rf{background-color: #0088CE;grid-area: 6/4 ;}
-#Db{background-color: #0088CE;grid-area: 6/5 ;}
-#Sg{background-color: #0088CE;grid-area:  6/6 ;}
-#Bh{background-color: #0088CE;grid-area: 6/7 ;}
-#Hs{background-color: #0088CE;grid-area: 6/8 ;}
-#Mt{background-color: #0088CE;grid-area: 6/9 ;}
-#Ds{background-color: #0088CE;grid-area: 6/10 ;}
-#Rg{background-color: #0088CE;grid-area: 6/11 ;}
-#Cn{background-color: #0088CE;grid-area: 6/12 ;}
-#Nh{background-color: #781E77;grid-area: 6/13 ;}
-#Fl{background-color: #781E77;grid-area: 6/14 ;}
-#Mc{background-color: #781E77;grid-area: 6/15 ;}
-#Lv{background-color: #781E77;grid-area: 6/16 ;}
-#Ts{background-color: #A2B427;grid-area: 6/17 ;}
-#Og{background-color: #006A36;grid-area: 6/18 ;}
+#Fr{background-color: #002A4E;grid-area: 7/1;}
+#Ra{background-color: #FDBA12;grid-area: 7/2 ;}
+#Lr{background-color: #0088CE;grid-area: 7/3 ;}  
+#Rf{background-color: #0088CE;grid-area: 7/4 ;}
+#Db{background-color: #0088CE;grid-area: 7/5 ;}
+#Sg{background-color: #0088CE;grid-area: 7/6 ;}
+#Bh{background-color: #0088CE;grid-area: 7/7 ;}
+#Hs{background-color: #0088CE;grid-area: 7/8 ;}
+#Mt{background-color: #0088CE;grid-area: 7/9 ;}
+#Ds{background-color: #0088CE;grid-area: 7/10 ;}
+#Rg{background-color: #0088CE;grid-area: 7/11 ;}
+#Cn{background-color: #0088CE;grid-area: 7/12 ;}
+#Nh{background-color: #781E77;grid-area: 7/13 ;}
+#Fl{background-color: #781E77;grid-area: 7/14 ;}
+#Mc{background-color: #781E77;grid-area: 7/15 ;}
+#Lv{background-color: #781E77;grid-area: 7/16 ;}
+#Ts{background-color: #A2B427;grid-area: 7/17 ;}
+#Og{background-color: #006A36;grid-area: 7/18 ;}
 
 .legendElements li{list-style-type: none;padding: 10px;}
 
@@ -135,7 +139,6 @@ Nonmetals -> #F58021    | Akali metals -> #002A4E
 Metalloids -> #ED1944    
 Other metals -> #781E77 
 */
-
 
 #noble-gas{grid-area: 1/8; font-size: 8px;}
 #halogens {grid-area: 1/9; font-size: 8px;}
@@ -158,14 +161,13 @@ Other metals -> #781E77
 #alkaline-earth-metal section{background-color: #FDBA12; width: 30px;height: 10px;}
 #alkali-metal section{background-color: #002A4E; width: 30px;height: 10px;}
 
-
 #elementoSelecc h1{margin: 0 auto;}
 #elementoSelecc{
     margin: 0 auto;
-    width: 85px;
-    height: 85px;
+    width: 125px;
+    height: 125px;
     text-align: center;
-    font-size: 9px;
+    font-size: 13px;
     padding: 5px;
     background-color: #F58021;
     grid-area: 1 / 2 / 8 / 9 }
@@ -174,23 +176,34 @@ Other metals -> #781E77
     flex-direction: row;
     justify-content: space-around;}
     
-
 .summaryElements{
+    background-color: rgb(255, 215, 162);;
     margin:0 auto;
     border-radius: 20px;
     padding: 20px;
     width: 650px;
     height: 150px;
     box-shadow: 5px 4px 34px -1px rgba(0,0,0,0.24);
+    margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;}
+
+
+.changeLang a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+    background: #555556;
+    font-size: 18px;
 }
 
-
-    
-    
+.changeLang a .active{
+    background: #ED1944;
+}
     
     
     
